@@ -145,18 +145,6 @@ img {
   margin: 2em;
   grid-area: mision;
 }
-/* Grids Index */
-.contenedor {
-  display: grid;
-  grid-template-areas:
-    "header header header header"
-    "parrafo1 parrafo1 parrafo1 parrafo1"
-    "imgindex1 imgindex1 imgindex1 imgindex1"
-    "parrafo2 parrafo2 parrafo2 parrafo2"
-    "imgindex2 imgindex2 imgindex2 imgindex2"
-    "mision mision mision mision"
-    "footer footer footer footer";
-}
 /* ccs Banca */
 .redondelBa {
   display: inline-block;
@@ -193,18 +181,6 @@ img {
   grid-area: imgbanca2;
 }
 
-/* Grid Banca digital */
-.contenedorBanca {
-  display: grid;
-  grid-template-areas:
-    "header header header header"
-    "pbanca1 pbanca1 pbanca1 pbanca1"
-    "imgbanca1 imgbanca1 imgbanca1 imgbanca1"
-    "pbanca2 pbanca2 pbanca2 pbanca2"
-    "imgbanca2 imgbanca2 imgbanca2 imgbanca2"
-    "footer footer footer footer";
-}
-
 .angulo2 {
   grid-area: titulof;
 }
@@ -218,18 +194,6 @@ img {
   max-width: 30rem;
   grid-area: imgbusca;
 }
-
-/* Grid Busca tu banco */
-.contenedorBusca {
-  display: grid;
-  grid-template-areas:
-    "header header header header"
-    "parrafo1 parrafo1 parrafo1 parrafo1"
-    "imgbusca imgbusca  imgbusca  imgbusca"
-    "parrafo2 parrafo2 parrafo2 parrafo2"
-    "footer footer footer footer";
-}
-
 /* CSS solo para academy */
 
 /* Grid Academy */
@@ -379,18 +343,6 @@ img {
     padding: 0.5rem;
     margin: 1em;
   }
-  /* Grids Index */
-  .contenedor {
-    display: grid;
-    grid-template-areas:
-      "header"
-      "parrafo1"
-      "imgindex1"
-      "parrafo2"
-      "imgindex2"
-      "mision"
-      "footer";
-  }
   /* arreglos banca digital */
   /* ccs Banca */
   .redondelBa {
@@ -408,33 +360,10 @@ img {
     padding: 0.5rem;
     object-fit: scale-down;
   }
-
-  /* Grid Banca digital */
-  .contenedorBanca {
-    display: grid;
-    grid-template-areas:
-      "header"
-      "pbanca1"
-      "imgbanca1"
-      "pbanca2"
-      "imgbanca2"
-      "footer";
-  }
   /* arreglos busca tu banco */
   .imgBusca {
     padding: 0.5rem;
     object-fit: scale-down;
-  }
-
-  /* Grid Busca tu banco */
-  .contenedorBusca {
-    display: grid;
-    grid-template-areas:
-      "header"
-      "parrafo1"
-      "imgbusca"
-      "parrafo2"
-      "footer";
   }
   /* Grid Academy */
   .contenedorAcademy {
@@ -547,18 +476,6 @@ img {
     padding: 1rem;
     margin: 1em;
   }
-  /* Grids Index */
-  .contenedor {
-    display: grid;
-    grid-template-areas:
-      "header header"
-      "parrafo1 parrafo1"
-      "imgindex1 imgindex1"
-      "parrafo2 parrafo2"
-      "imgindex2 imgindex2"
-      "mision mision"
-      "footer footer";
-  }
   /* arreglos banca digital */
   /* ccs Banca */
   .redondelBa {
@@ -576,33 +493,10 @@ img {
     padding: 1rem;
     object-fit: scale-down;
   }
-
-  /* Grid Banca digital */
-  .contenedorBanca {
-    display: grid;
-    grid-template-areas:
-      "header header"
-      "pbanca1 pbanca1"
-      "imgbanca1 imgbanca1"
-      "pbanca2 pbanca2"
-      "imgbanca2 imgbanca2"
-      "footer footer";
-  }
   /* arreglos busca tu banco */
   .imgBusca {
     padding: 1rem;
     object-fit: scale-down;
-  }
-
-  /* Grid Busca tu banco */
-  .contenedorBusca {
-    display: grid;
-    grid-template-areas:
-      "header header"
-      "parrafo1 parrafo1"
-      "imgbusca imgbusca"
-      "parrafo2 parrafo2"
-      "footer footer";
   }
   /* Grid Academy */
   .contenedorAcademy {
