@@ -1,0 +1,690 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 90%;
+}
+
+body {
+  font-family: helvetica;
+  background: #f6f5f5;
+}
+
+/* CCS General */
+.barrera {
+  background: #a3e4db;
+  padding: 20px;
+  border-radius: 20px 10px 50px 30px;
+  -webkit-border-radius: 20px 10px 50px 30px;
+  -moz-border-radius: 20px 10px 50px 30px;
+  -ms-border-radius: 20px 10px 50px 30px;
+  -o-border-radius: 20px 10px 50px 30px;
+  border: 2px #30475e solid;
+  position: sticky;
+  top: 0;
+  width: 95%;
+  grid-area: header;
+}
+
+.logo {
+  margin: 0px;
+  font-size: large;
+  display: inline-block;
+}
+
+.triangulo {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  line-height: 20px;
+}
+nav {
+  display: inline-block;
+  margin-left: 100px;
+}
+
+li {
+  display: inline-block;
+  width: 180px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+a:hover {
+  background: #ffffff;
+  color: #30475e;
+}
+
+.circulo {
+  background: #a3e4db;
+  padding: 10px;
+  border-radius: 20px 10px 25px 30px;
+  -webkit-border-radius: 20px 10px 25px 30px;
+  -moz-border-radius: 20px 10px 25px 30px;
+  -ms-border-radius: 20px 10px 25px 30px;
+  -o-border-radius: 20px 10px 25px 30px;
+  border: 2px #30475e solid;
+  width: 97%;
+  grid-area: footer;
+}
+
+.logofooter {
+  margin: -30px 0px 0px 0px;
+  display: block;
+  z-index: auto;
+  position: relative;
+  right: -1200px;
+  max-width: 4rem;
+  max-width: 4rem;
+}
+
+/* css Index */
+.angulo {
+  padding: 1em;
+}
+.redondel {
+  display: inline-block;
+  padding: 4rem;
+  flex-direction: column;
+  grid-area: parrafo1;
+}
+.redondel2 {
+  margin: auto;
+  display: flex;
+  padding: 4rem;
+  flex-direction: column;
+  grid-area: parrafo2;
+}
+
+.imgindex1 {
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  max-width: 40rem;
+  grid-area: imgindex1;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.imgindex2 {
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  max-width: 30rem;
+  grid-area: imgindex2;
+}
+.mision {
+  background-color: #a2b5bb;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px 4px 4px 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  -moz-border-radius: 4px 4px 4px 4px;
+  -ms-border-radius: 4px 4px 4px 4px;
+  -o-border-radius: 4px 4px 4px 4px;
+  border: 2px #30475e solid;
+  margin: 2em;
+  grid-area: mision;
+}
+/* Grids Index */
+.contenedor {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "parrafo1 parrafo1 parrafo1 parrafo1"
+    "imgindex1 imgindex1 imgindex1 imgindex1"
+    "parrafo2 parrafo2 parrafo2 parrafo2"
+    "imgindex2 imgindex2 imgindex2 imgindex2"
+    "mision mision mision mision"
+    "footer footer footer footer";
+}
+/* ccs Banca */
+.redondelBa {
+  display: inline-block;
+  padding: 4rem;
+  flex-direction: column;
+  grid-area: pbanca1;
+}
+.redondelBa2 {
+  margin: auto;
+  display: flex;
+  padding: 4rem;
+  flex-direction: column;
+  grid-area: pbanca2;
+}
+.tarjetero {
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  max-width: 30rem;
+  grid-area: imgbanca1;
+}
+
+.celular {
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  max-width: 30rem;
+  grid-area: imgbanca2;
+}
+
+/* Grid Banca digital */
+.contenedorBanca {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "pbanca1 pbanca1 pbanca1 pbanca1"
+    "imgbanca1 imgbanca1 imgbanca1 imgbanca1"
+    "pbanca2 pbanca2 pbanca2 pbanca2"
+    "imgbanca2 imgbanca2 imgbanca2 imgbanca2"
+    "footer footer footer footer";
+}
+
+.angulo2 {
+  grid-area: titulof;
+}
+.imgBusca {
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  max-width: 30rem;
+  grid-area: imgbusca;
+}
+
+/* Grid Busca tu banco */
+.contenedorBusca {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "parrafo1 parrafo1 parrafo1 parrafo1"
+    "imgbusca imgbusca  imgbusca  imgbusca"
+    "parrafo2 parrafo2 parrafo2 parrafo2"
+    "footer footer footer footer";
+}
+
+/* CSS solo para academy */
+
+/* Grid Academy */
+.contenedorAcademy {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "titacademy titacademy titacademy titacademy"
+    "curso1 curso1 texto1 texto1"
+    "curso2 curso2 texto2 texto2"
+    "curso3 curso3 texto3 texto3"
+    "footer footer footer footer";
+}
+
+.tituloAcademy {
+  display: fex;
+  margin: 50px 20px;
+  grid-area: titacademy;
+}
+
+.agudo {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  grid-area: curso1;
+}
+
+.img1 {
+  margin-left: 50px;
+  border: #30475e 1px solid;
+  max-width: 7rem;
+}
+
+.parrafo1 {
+  display: flex;
+  margin: 50px;
+  margin-left: 0;
+  grid-area: texto1;
+}
+
+.recto {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  grid-area: curso2;
+}
+
+.img2 {
+  margin-left: 50px;
+  border: #30475e 1px solid;
+  max-width: 7rem;
+}
+
+.parrafo2 {
+  display: flex;
+  margin: 50px;
+  margin-left: 0;
+  grid-area: texto2;
+}
+
+.obtuso {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  grid-area: curso3;
+}
+
+.img3 {
+  margin-left: 50px;
+  border: #30475e 1px solid;
+  max-width: 7rem;
+}
+
+.parrafo3 {
+  display: flex;
+  margin: 50px;
+  margin-left: 0;
+  grid-area: texto3;
+}
+
+/* formulario */
+/* grid Contacto */
+.contenedorContacto {
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "titulof titulof titulof titulof"
+    "formulario formulario imgcont imgcont"
+    "footer footer footer footer";
+}
+/* grid Contacto cierre */
+
+.formimagen {
+  grid-area: imgcont;
+  justify-content: center;
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  align-items: center;
+  max-width: 20rem;
+}
+
+.formularioTitulo {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.formulario {
+  display: inline-block;
+  margin: 1rem;
+  align-content: center;
+  grid-area: formulario;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  html {
+    font-size: 75.5%;
+  }
+  /* ajuste header */
+  .barrera {
+    position: static;
+    padding: 0.3rem;
+  }
+  a:hover {
+    background: none;
+  }
+  .logo {
+    font-size: small;
+  }
+  .logofooter {
+    display: none;
+  }
+  .circulo {
+    padding: 0.3rem;
+  }
+
+  .imgindex1 {
+    padding: 0.5rem;
+    object-fit: scale-down;
+  }
+  .imgindex2 {
+    padding: 0.5rem;
+    object-fit: scale-down;
+  }
+  .mision {
+    padding: 0.5rem;
+    margin: 1em;
+  }
+  /* Grids Index */
+  .contenedor {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "parrafo1"
+      "imgindex1"
+      "parrafo2"
+      "imgindex2"
+      "mision"
+      "footer";
+  }
+  /* arreglos banca digital */
+  /* ccs Banca */
+  .redondelBa {
+    padding: 2rem;
+  }
+  .redondelBa2 {
+    padding: 2rem;
+  }
+  .tarjetero {
+    padding: 0.5rem;
+    object-fit: scale-down;
+  }
+
+  .celular {
+    padding: 0.5rem;
+    object-fit: scale-down;
+  }
+
+  /* Grid Banca digital */
+  .contenedorBanca {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "pbanca1"
+      "imgbanca1"
+      "pbanca2"
+      "imgbanca2"
+      "footer";
+  }
+  /* arreglos busca tu banco */
+  .imgBusca {
+    padding: 0.5rem;
+    object-fit: scale-down;
+  }
+
+  /* Grid Busca tu banco */
+  .contenedorBusca {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "parrafo1"
+      "imgbusca"
+      "parrafo2"
+      "footer";
+  }
+  /* Grid Academy */
+  .contenedorAcademy {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "titacademy"
+      "curso1"
+      "texto1"
+      "curso2"
+      "texto2"
+      "curso3"
+      "texto3"
+      "footer";
+  }
+  .tituloAcademy {
+    align-content: center;
+    margin: auto;
+    padding: 1rem;
+  }
+
+  .img1 {
+    margin: auto;
+    max-width: 14rem;
+  }
+
+  .parrafo1 {
+    margin: 0;
+  }
+
+  .img2 {
+    margin: auto;
+    max-width: 14rem;
+  }
+
+  .parrafo2 {
+    margin: 0;
+  }
+
+  .img3 {
+    margin: auto;
+    max-width: 14rem;
+  }
+
+  .parrafo3 {
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  * formulario */
+/* grid Contacto */
+.contenedorContacto {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "titulof"
+      "formulario"
+      "footer";
+  }
+  /* grid Contacto cierre */
+
+  .formimagen {
+    display: none;
+    margin: 0%;
+  }
+
+  .formularioTitulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .formulario {
+    display: flex;
+    margin-left: 10rem;
+    margin-right: 5rem;
+    justify-content: center;
+  }
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 1000px) {
+  html {
+    font-size: 80%;
+  }
+  /* ajuste header */
+  .barrera {
+    position: static;
+    padding: 0.3rem;
+  }
+  a:hover {
+    background: none;
+  }
+  .logo {
+    font-size: small;
+  }
+  .logofooter {
+    display: none;
+  }
+  .circulo {
+    padding: 0.3rem;
+  }
+
+  .imgindex1 {
+    padding: 1rem;
+    object-fit: scale-down;
+  }
+  .imgindex2 {
+    padding: 1rem;
+    object-fit: scale-down;
+  }
+  .mision {
+    padding: 1rem;
+    margin: 1em;
+  }
+  /* Grids Index */
+  .contenedor {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "parrafo1 parrafo1"
+      "imgindex1 imgindex1"
+      "parrafo2 parrafo2"
+      "imgindex2 imgindex2"
+      "mision mision"
+      "footer footer";
+  }
+  /* arreglos banca digital */
+  /* ccs Banca */
+  .redondelBa {
+    padding: 2rem;
+  }
+  .redondelBa2 {
+    padding: 2rem;
+  }
+  .tarjetero {
+    padding: 1rem;
+    object-fit: scale-down;
+  }
+
+  .celular {
+    padding: 1rem;
+    object-fit: scale-down;
+  }
+
+  /* Grid Banca digital */
+  .contenedorBanca {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "pbanca1 pbanca1"
+      "imgbanca1 imgbanca1"
+      "pbanca2 pbanca2"
+      "imgbanca2 imgbanca2"
+      "footer footer";
+  }
+  /* arreglos busca tu banco */
+  .imgBusca {
+    padding: 1rem;
+    object-fit: scale-down;
+  }
+
+  /* Grid Busca tu banco */
+  .contenedorBusca {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "parrafo1 parrafo1"
+      "imgbusca imgbusca"
+      "parrafo2 parrafo2"
+      "footer footer";
+  }
+  /* Grid Academy */
+  .contenedorAcademy {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "titacademy titacademy"
+      "curso1 curso1"
+      "texto1 texto1"
+      "curso2 curso2"
+      "texto2 texto2"
+      "curso3 curso3"
+      "texto3 texto3"
+      "footer footer";
+  }
+  .tituloAcademy {
+    align-content: center;
+    margin: auto;
+    padding: 1rem;
+  }
+
+  .img1 {
+    margin: auto;
+    max-width: 14rem;
+  }
+
+  .parrafo1 {
+    margin: 0;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .img2 {
+    margin: auto;
+    max-width: 14rem;
+  }
+
+  .parrafo2 {
+    margin: 0;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  .img3 {
+    margin: auto;
+    max-width: 14rem;
+  }
+
+  .parrafo3 {
+    margin: 0;
+    margin-bottom: 1.5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+  /* * formulario */
+  /* grid Contacto */
+  .contenedorContacto {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "titulof titulof"
+      "formulario formulario"
+      "imgcont imgcont"
+      "footer footer";
+  }
+  /* grid Contacto cierre */
+
+  .formimagen {
+    max-width: 30rem;
+    margin: auto;
+  }
+
+  .formularioTitulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .formulario {
+    display: flex;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    justify-content: center;
+  }
+}
