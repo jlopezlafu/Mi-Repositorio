@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="../estilo/estilo.css" />
     <link rel="icon" href="../img/bxs-bank.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Tubancodigital</title>
   </head>
   <body class="contenedorContacto">
@@ -12,7 +13,7 @@
     <header class="barrera">
       <a href="../index.html"><img src="../img/bxs-bank.png" alt="Bank" /></a>
       <br />
-      <h1 class="logo">TuBancoDigital.com</h1>
+      <h1 class="logo" data-aos="flip-left">TuBancoDigital.com</h1>
       <nav>
         <ul class="triangulo">
           <li><a href="../index.html">Inicio</a></li>
@@ -31,33 +32,47 @@
     <!-- incio del formulario -->
     <div class="formulario">
       <form action="">
-        <label for="Nombre">Nombre</label>
-        <input type="text" placeholder="Juan" name="Nombre" id="Nombre" />
-        <label for="Apellido">Apellido</label>
-        <input type="text" placeholder="lopez" name="Apellido" id="Apellido" />
-        <br /><br />
-        <label for="email">Email</label>
+        <label class="boton1" for="Nombre">Nombre</label>
         <input
+          class="formu"
+          type="text"
+          placeholder="Juan"
+          name="Nombre"
+          id="Nombre"
+        />
+        <label class="boton1" for="Apellido">Apellido</label>
+        <input
+          class="formu"
+          type="text"
+          placeholder="lopez"
+          name="Apellido"
+          id="Apellido"
+        />
+        <br /><br />
+        <label class="boton1" for="email">Email</label>
+        <input
+          class="formu"
           type="email"
           placeholder="juanlopez@tucorreo.com"
           name="Email"
-          id="Email"
+          id="email"
         />
         <br /><br />
-        <label for="Comentario">Comentario</label><br />
+        <label class="boton1" for="Comentario">Comentario</label><br />
         <textarea
+          class="formu"
           name="Comentario"
           id=""
-          cols="30"
+          cols="40"
           rows="10"
           placeholder="Escriba su comentario o consulta"
         ></textarea>
-        <div>
+        <div class="boton1">
           Queres recibir nuestro newsletter
           <input type="checkbox" name="acepta" value="1" />
         </div>
-        <input type="submit" value="Enviar" />
-        <input type="reset" value="Borrar todo" />
+        <input class="boton" type="submit" value="Enviar" />
+        <input class="boton" type="reset" value="Borrar todo" />
       </form>
     </div>
     <!-- Fin del formulario -->
@@ -70,5 +85,9 @@
       <img class="logofooter" src="../img/bxs-bank.png" alt="Bank" />
       <h4>Tubancodigital.com – Todos los derechos reservados – 2022</h4>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
