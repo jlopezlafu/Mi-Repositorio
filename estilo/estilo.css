@@ -5,6 +5,7 @@
 
 html {
   font-size: 90%;
+  font-family: helvetica;
 }
 
 body {
@@ -14,49 +15,32 @@ body {
 
 /* CCS General */
 .barrera {
-  background: #a3e4db;
-  padding: 20px;
-  border-radius: 20px 10px 50px 30px;
-  -webkit-border-radius: 20px 10px 50px 30px;
-  -moz-border-radius: 20px 10px 50px 30px;
-  -ms-border-radius: 20px 10px 50px 30px;
-  -o-border-radius: 20px 10px 50px 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #a5c9ca;
+  font-size: large;
+  padding: 10px;
+  border-radius: 5px 3px 20px 10px;
+  -webkit-border-radius: 5px 3px 20px 10px;
+  -moz-border-radius: 5px 3px 20px 10px;
+  -ms-border-radius: 5px 3px 20px 10px;
+  -o-border-radius: 5px 3px 20px 10px;
   border: 2px #30475e solid;
   position: sticky;
   top: 0;
-  width: 95%;
   grid-area: header;
 }
 
 .logo {
   margin: 0px;
   font-size: large;
-  display: inline-block;
+  font-weight: bold;
 }
 
 .triangulo {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: inline-block;
   line-height: 20px;
-}
-nav {
-  display: inline-block;
-  margin-left: 100px;
-}
-
-li {
-  display: inline-block;
-  width: 180px;
-  text-align: center;
-}
-
-a {
-  text-decoration: none;
-  display: inline-block;
-  color: rgb(0, 0, 0);
-  font-weight: bold;
 }
 
 a:hover {
@@ -71,6 +55,7 @@ a:hover {
 }
 
 .circulo {
+  display: flexbox;
   background: #a3e4db;
   padding: 10px;
   border-radius: 20px 10px 25px 30px;
@@ -79,16 +64,28 @@ a:hover {
   -ms-border-radius: 20px 10px 25px 30px;
   -o-border-radius: 20px 10px 25px 30px;
   border: 2px #30475e solid;
-  width: 97%;
   grid-area: footer;
+}
+.social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: small;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-right: 5px;
+  transition: 0.3s;
+}
+
+.footer .social-links a:hover {
+  color: #fff;
+  border-color: #fff;
 }
 
 .logofooter {
-  margin: -30px 0px 0px 0px;
-  display: block;
-  z-index: auto;
-  position: relative;
-  right: -1200px;
+  display: flex;
   max-width: 4rem;
   max-width: 4rem;
 }
@@ -320,7 +317,7 @@ img {
     font-size: 75.5%;
   }
   /* ajuste header */
-  .barrera {
+  /* .barrera {
     position: static;
     padding: 0.3rem;
   }
@@ -329,7 +326,7 @@ img {
   }
   .logo {
     font-size: small;
-  }
+  } */
   .logofooter {
     display: none;
   }
@@ -590,14 +587,6 @@ img {
 }
 
 /* Animaciones */
-.contenedorContacto {
-  background: linear-gradient(to left top, #30475e, #a3e4db);
-}
-
-.contenedorAcademy {
-  background: linear-gradient(to left top, #30475e, #a3e4db);
-}
-
 .boton {
   height: 40px;
   border-radius: 2px;
@@ -616,7 +605,7 @@ img {
   height: 40px;
   border-radius: 2px;
   border: none;
-  color: white;
+  color: black;
   text-transform: uppercase;
   font-size: 15px;
   padding: 5px;
@@ -639,17 +628,12 @@ img {
 .boton:active {
   transform: translateY(3px);
 }
-
-.formu:focus {
-  height: 30px;
-}
-
 .formu {
   border-radius: 4px;
   border: 1px solid #1f53c5;
 }
 
-@keyframes logofooter {
+/* @keyframes logofooter {
   0% {
     opacity: 0;
   }
@@ -661,4 +645,4 @@ img {
   animation-name: logofooter;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-}
+} */
