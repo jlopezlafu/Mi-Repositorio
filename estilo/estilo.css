@@ -307,7 +307,7 @@ img {
   align-content: center;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media (min-device-width: 300px) and (max-device-width: 480px) {
   html {
     font-size: 75.5%;
   }
@@ -412,14 +412,12 @@ img {
   }
 
   .formularioTitulo {
-    display: flex;
     align-items: center;
     justify-content: center;
   }
   .formulario {
-    display: flex;
-    margin-left: 10rem;
-    margin-right: 5rem;
+    margin-left: 3rem;
+    margin-right: 10rem;
     justify-content: center;
   }
 }
@@ -534,7 +532,6 @@ img {
   }
 
   /* * formulario */
-  /* grid Contacto */
   .formimagen {
     display: none;
   }
@@ -546,9 +543,8 @@ img {
   }
   .formulario {
     display: flex;
-    margin-left: 10rem;
-    margin-right: 10rem;
-    justify-content: center;
+    margin-left: 5rem;
+    margin-right: 15rem;
   }
 }
 
@@ -599,7 +595,7 @@ img {
   border: 1px solid #1f53c5;
 }
 
-/* @keyframes logofooter {
+@keyframes logofooter {
   0% {
     opacity: 0;
   }
@@ -609,6 +605,6 @@ img {
 }
 .logofooter {
   animation-name: logofooter;
-  animation-duration: 2s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
-} */
+}
