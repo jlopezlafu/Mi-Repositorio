@@ -260,7 +260,8 @@ img {
   }
   .social {
     object-fit: scale-down;
-    margin: 1rem;
+    margin: auto;
+    margin-left: 3rem;
   }
   /* arreglos banca digital */
   /* ccs Banca */
@@ -341,7 +342,7 @@ img {
 
   .social {
     object-fit: scale-down;
-    margin-left: 1rem;
+    margin-left: 3rem;
   }
   /* arreglos banca digital */
   /* ccs Banca */
