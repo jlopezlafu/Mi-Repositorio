@@ -26,7 +26,6 @@ body {
   border: 2px #30475e solid;
   position: sticky;
   top: 0;
-  grid-area: header;
 }
 
 .logo {
@@ -65,7 +64,6 @@ a:hover {
   -ms-border-radius: 5px 3px 20px 10px;
   -o-border-radius: 5px 3px 20px 10px;
   border: 2px #30475e solid;
-  grid-area: footer;
 }
 
 .social-links {
@@ -107,14 +105,12 @@ h3 {
   display: inline-block;
   padding: 4rem;
   flex-direction: column;
-  grid-area: parrafo1;
 }
 .redondel2 {
   margin: auto;
   display: flex;
   padding: 4rem;
   flex-direction: column;
-  grid-area: parrafo2;
 }
 
 .imgindex1 {
@@ -125,7 +121,6 @@ h3 {
   flex-direction: row;
   align-items: center;
   max-width: 40rem;
-  grid-area: imgindex1;
 }
 img {
   width: 100%;
@@ -140,7 +135,6 @@ img {
   flex-direction: row;
   align-items: center;
   max-width: 30rem;
-  grid-area: imgindex2;
 }
 .mision {
   background-color: #a2b5bb;
@@ -162,14 +156,12 @@ img {
   display: inline-block;
   padding: 4rem;
   flex-direction: column;
-  grid-area: pbanca1;
 }
 .redondelBa2 {
   margin: auto;
   display: flex;
   padding: 4rem;
   flex-direction: column;
-  grid-area: pbanca2;
 }
 .tarjetero {
   margin: auto;
@@ -179,7 +171,6 @@ img {
   flex-direction: row;
   align-items: center;
   max-width: 30rem;
-  grid-area: imgbanca1;
 }
 
 .celular {
@@ -190,11 +181,6 @@ img {
   flex-direction: row;
   align-items: center;
   max-width: 30rem;
-  grid-area: imgbanca2;
-}
-
-.angulo2 {
-  grid-area: titulof;
 }
 .imgBusca {
   margin: auto;
@@ -204,86 +190,20 @@ img {
   flex-direction: row;
   align-items: center;
   max-width: 30rem;
-  grid-area: imgbusca;
 }
 /* CSS solo para academy */
-
-/* Grid Academy */
-.contenedorAcademy {
-  display: grid;
-  grid-template-areas:
-    "header header header header"
-    "titacademy titacademy titacademy titacademy"
-    "curso1 curso1 texto1 texto1"
-    "curso2 curso2 texto2 texto2"
-    "curso3 curso3 texto3 texto3"
-    "footer footer footer footer";
-}
 
 .tituloAcademy {
   display: fex;
   margin: 50px 20px;
-  grid-area: titacademy;
 }
 
-.agudo {
-  display: flex;
-  align-items: center;
-  margin: 20px;
-  grid-area: curso1;
-}
-
-.img1 {
-  margin-left: 50px;
-  border: #30475e 1px solid;
-  max-width: 7rem;
-}
-
-.parrafo1 {
-  display: flex;
-  margin: 50px;
-  margin-left: 0;
-  grid-area: texto1;
-}
-
-.recto {
-  display: flex;
-  align-items: center;
-  margin: 20px;
-  grid-area: curso2;
-}
-
-.img2 {
-  margin-left: 50px;
-  border: #30475e 1px solid;
-  max-width: 7rem;
-}
-
-.parrafo2 {
-  display: flex;
-  margin: 50px;
-  margin-left: 0;
-  grid-area: texto2;
-}
-
-.obtuso {
-  display: flex;
-  align-items: center;
-  margin: 20px;
-  grid-area: curso3;
-}
-
-.img3 {
-  margin-left: 50px;
-  border: #30475e 1px solid;
-  max-width: 7rem;
-}
-
-.parrafo3 {
-  display: flex;
-  margin: 50px;
-  margin-left: 0;
-  grid-area: texto3;
+.card {
+  display: flexbox;
+  width: 20rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-bottom: 5rem;
 }
 
 /* formulario */
@@ -338,6 +258,10 @@ img {
     padding: 0.5rem;
     margin: 1em;
   }
+  .social {
+    object-fit: scale-down;
+    margin: 1rem;
+  }
   /* arreglos banca digital */
   /* ccs Banca */
   .redondelBa {
@@ -360,53 +284,12 @@ img {
     padding: 0.5rem;
     object-fit: scale-down;
   }
-  /* Grid Academy */
-  .contenedorAcademy {
-    display: grid;
-    grid-template-areas:
-      "header"
-      "titacademy"
-      "curso1"
-      "texto1"
-      "curso2"
-      "texto2"
-      "curso3"
-      "texto3"
-      "footer";
-  }
-  .tituloAcademy {
-    align-content: center;
-    margin: auto;
-    padding: 1rem;
+
+  .card {
+    width: 20rem;
+    margin-left: 6rem;
   }
 
-  .img1 {
-    margin: auto;
-    max-width: 14rem;
-  }
-
-  .parrafo1 {
-    margin: 0;
-  }
-
-  .img2 {
-    margin: auto;
-    max-width: 14rem;
-  }
-
-  .parrafo2 {
-    margin: 0;
-  }
-
-  .img3 {
-    margin: auto;
-    max-width: 14rem;
-  }
-
-  .parrafo3 {
-    margin: 0;
-    margin-bottom: 1.5rem;
-  }
   .formimagen {
     display: none;
   }
@@ -455,6 +338,11 @@ img {
     padding: 1rem;
     margin: 1em;
   }
+
+  .social {
+    object-fit: scale-down;
+    margin-left: 1rem;
+  }
   /* arreglos banca digital */
   /* ccs Banca */
   .redondelBa {
@@ -476,59 +364,6 @@ img {
   .imgBusca {
     padding: 1rem;
     object-fit: scale-down;
-  }
-  /* Grid Academy */
-  .contenedorAcademy {
-    display: grid;
-    grid-template-areas:
-      "header header"
-      "titacademy titacademy"
-      "curso1 curso1"
-      "texto1 texto1"
-      "curso2 curso2"
-      "texto2 texto2"
-      "curso3 curso3"
-      "texto3 texto3"
-      "footer footer";
-  }
-  .tituloAcademy {
-    align-content: center;
-    margin: auto;
-    padding: 1rem;
-  }
-
-  .img1 {
-    margin: auto;
-    max-width: 14rem;
-  }
-
-  .parrafo1 {
-    margin: 0;
-    padding-left: 10rem;
-    padding-right: 10rem;
-  }
-
-  .img2 {
-    margin: auto;
-    max-width: 14rem;
-  }
-
-  .parrafo2 {
-    margin: 0;
-    padding-left: 10rem;
-    padding-right: 10rem;
-  }
-
-  .img3 {
-    margin: auto;
-    max-width: 14rem;
-  }
-
-  .parrafo3 {
-    margin: 0;
-    margin-bottom: 1.5rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
   }
 
   /* * formulario */
