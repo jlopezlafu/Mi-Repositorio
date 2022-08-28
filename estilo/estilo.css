@@ -1,20 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-html {
-  font-size: 95%;
-  font-family: helvetica;
-}
-
-body {
-  font-family: helvetica;
-  background: #f6f5f5;
-}
-
-/* CCS General */
-.barrera {
+header {
   background-color: #a5c9ca;
   font-size: large;
   padding: 10px;
@@ -25,117 +9,100 @@ body {
   -o-border-radius: 5px 3px 20px 10px;
   border: 2px #30475e solid;
   position: sticky;
-  top: 0;
-}
+  top: 0; }
+  header h1 {
+    margin: 0px;
+    font-size: 1.5rem;
+    font-weight: bold; }
+  header nav li {
+    display: flex; }
+    header nav li a {
+      display: flex; }
+      header nav li a:hover {
+        cursor: pointer;
+        transform: translateY(-3px);
+        transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 1s;
+        -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 1s;
+        -moz-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 1s;
+        -ms-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 1s;
+        -o-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 1s;
+        font-weight: bold; }
 
-.logo {
-  margin: 0px;
-  font-size: large;
-  font-weight: bold;
-}
-
-.triangulo {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  line-height: 20px;
-}
-
-a:hover {
-  color: #ffffff;
-  border-color: #ffffff;
-  cursor: pointer;
-  transform: translateY(-3px);
-  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 1s;
-  -webkit-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 1s;
-  -moz-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 1s;
-  -ms-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 1s;
-  -o-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 1s;
-}
-
-.circulo {
+footer {
   display: flexbox;
   flex-direction: row;
-  background-color: #b5eaea;
+  background-color: #a5c9ca;
   padding: 10px;
   border-radius: 5px 3px 20px 10px;
   -webkit-border-radius: 5px 3px 20px 10px;
   -moz-border-radius: 5px 3px 20px 10px;
   -ms-border-radius: 5px 3px 20px 10px;
   -o-border-radius: 5px 3px 20px 10px;
-  border: 2px #30475e solid;
-}
+  border: 2px solid;
+  border-color: #30475e; }
+  footer h3 {
+    font-size: large;
+    font-weight: bold; }
+  footer .logofooter {
+    display: flex;
+    max-width: 4rem;
+    max-width: 4rem; }
+  footer .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    margin-right: 10px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s; }
+    footer .social-links:hover {
+      color: #ffffff;
+      border-color: #ffffff; }
 
-.social-links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 1px solid grey;
-  margin-right: 10px;
-  transition: 0.3s;
-  -webkit-transition: 0.3s;
-  -moz-transition: 0.3s;
-  -ms-transition: 0.3s;
-  -o-transition: 0.3s;
-}
-
-h3 {
-  font-size: large;
-  font-weight: bold;
-}
-.social-links a:hover {
-  color: #ffffff;
-  border-color: #ffffff;
-}
-
-.logofooter {
-  display: flex;
-  max-width: 4rem;
-  max-width: 4rem;
-}
+* {
+  margin: 0;
+  padding: 0; }
+  * html {
+    font-size: 95%;
+    font-family: helvetica; }
+  * body {
+    background-color: #f6f5f5; }
 
 /* css Index */
 .angulo {
-  padding: 1em;
-}
+  padding: 1rem; }
+
 .redondel {
   display: inline-block;
   padding: 4rem;
-  flex-direction: column;
-}
+  flex-direction: column; }
+
 .redondel2 {
   margin: auto;
   display: flex;
   padding: 4rem;
-  flex-direction: column;
-}
+  flex-direction: column; }
 
-.imgindex1 {
+.imgindex1, .imgindex2, .tarjetero, .celular, .imgBusca {
   margin: auto;
   padding: 1rem;
   display: flex;
   text-align: center;
   flex-direction: row;
   align-items: center;
-  max-width: 40rem;
-}
+  max-width: 40rem; }
+
 img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-}
-.imgindex2 {
-  margin: auto;
-  padding: 1rem;
-  display: flex;
-  text-align: center;
-  flex-direction: row;
-  align-items: center;
-  max-width: 30rem;
-}
+  object-fit: contain; }
+
 .mision {
   background-color: #a2b5bb;
   padding: 1rem;
@@ -149,62 +116,37 @@ img {
   -o-border-radius: 4px 4px 4px 4px;
   border: 2px #30475e solid;
   margin: 2em;
-  grid-area: mision;
-}
+  grid-area: mision; }
+
 /* ccs Banca */
 .redondelBa {
   display: inline-block;
   padding: 4rem;
-  flex-direction: column;
-}
+  flex-direction: column; }
+
 .redondelBa2 {
   margin: auto;
   display: flex;
   padding: 4rem;
-  flex-direction: column;
-}
+  flex-direction: column; }
+
 .tarjetero {
-  margin: auto;
-  padding: 1rem;
-  display: flex;
-  text-align: center;
-  flex-direction: row;
-  align-items: center;
-  max-width: 30rem;
-}
+  max-width: 30rem; }
 
 .celular {
-  margin: auto;
-  padding: 1rem;
-  display: flex;
-  text-align: center;
-  flex-direction: row;
-  align-items: center;
-  max-width: 30rem;
-}
-.imgBusca {
-  margin: auto;
-  padding: 1rem;
-  display: flex;
-  text-align: center;
-  flex-direction: row;
-  align-items: center;
-  max-width: 30rem;
-}
-/* CSS solo para academy */
+  max-width: 30rem; }
 
+/* CSS solo para academy */
 .tituloAcademy {
   display: fex;
-  margin: 50px 20px;
-}
+  margin: 50px 20px; }
 
 .card {
   display: flexbox;
   width: 20rem;
   margin-left: 3rem;
   margin-right: 3rem;
-  margin-bottom: 5rem;
-}
+  margin-bottom: 5rem; }
 
 /* formulario */
 .formimagen {
@@ -214,233 +156,13 @@ img {
   display: flex;
   text-align: right;
   flex-direction: column;
-  max-width: 20rem;
-}
+  max-width: 25rem; }
 
 .formularioTitulo {
   margin-top: 10px;
-  margin-left: 10px;
-}
+  margin-left: 10px; }
+
 .formulario {
   display: flex;
   margin: 1rem;
-  align-content: center;
-}
-
-@media (min-device-width: 300px) and (max-device-width: 480px) {
-  html {
-    font-size: 75.5%;
-  }
-  /* ajuste header */
-  .barrera {
-    position: static;
-    padding: 0.3rem;
-  }
-  .logo {
-    font-size: small;
-  }
-  .logofooter {
-    display: none;
-  }
-  .circulo {
-    padding: 0.3rem;
-  }
-
-  .imgindex1 {
-    padding: 0.5rem;
-    object-fit: scale-down;
-  }
-  .imgindex2 {
-    padding: 0.5rem;
-    object-fit: scale-down;
-  }
-  .mision {
-    padding: 0.5rem;
-    margin: 1em;
-  }
-  .social {
-    object-fit: scale-down;
-    margin: auto;
-    margin-left: 3rem;
-  }
-  /* arreglos banca digital */
-  /* ccs Banca */
-  .redondelBa {
-    padding: 2rem;
-  }
-  .redondelBa2 {
-    padding: 2rem;
-  }
-  .tarjetero {
-    padding: 0.5rem;
-    object-fit: scale-down;
-  }
-
-  .celular {
-    padding: 0.5rem;
-    object-fit: scale-down;
-  }
-  /* arreglos busca tu banco */
-  .imgBusca {
-    padding: 0.5rem;
-    object-fit: scale-down;
-  }
-
-  .card {
-    width: 20rem;
-    margin-left: 6rem;
-  }
-
-  .formimagen {
-    display: none;
-  }
-
-  .formularioTitulo {
-    align-items: center;
-    justify-content: center;
-  }
-  .formulario {
-    margin-left: 3rem;
-    margin-right: 10rem;
-    justify-content: center;
-  }
-}
-@media only screen and (min-device-width: 481px) and (max-device-width: 1000px) {
-  html {
-    font-size: 80%;
-  }
-  /* ajuste header */
-  .barrera {
-    position: static;
-    padding: 0.3rem;
-  }
-  a:hover {
-    background: none;
-  }
-  .logo {
-    font-size: small;
-  }
-  .logofooter {
-    display: none;
-  }
-  .circulo {
-    padding: 0.3rem;
-  }
-
-  .imgindex1 {
-    padding: 1rem;
-    object-fit: scale-down;
-  }
-  .imgindex2 {
-    padding: 1rem;
-    object-fit: scale-down;
-  }
-  .mision {
-    padding: 1rem;
-    margin: 1em;
-  }
-
-  .social {
-    object-fit: scale-down;
-    margin-left: 3rem;
-  }
-  /* arreglos banca digital */
-  /* ccs Banca */
-  .redondelBa {
-    padding: 2rem;
-  }
-  .redondelBa2 {
-    padding: 2rem;
-  }
-  .tarjetero {
-    padding: 1rem;
-    object-fit: scale-down;
-  }
-
-  .celular {
-    padding: 1rem;
-    object-fit: scale-down;
-  }
-  /* arreglos busca tu banco */
-  .imgBusca {
-    padding: 1rem;
-    object-fit: scale-down;
-  }
-
-  /* * formulario */
-  .formimagen {
-    display: none;
-  }
-
-  .formularioTitulo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .formulario {
-    display: flex;
-    margin-left: 5rem;
-    margin-right: 15rem;
-  }
-}
-
-/* Animaciones */
-.boton {
-  height: 40px;
-  border-radius: 2px;
-  border: none;
-  color: white;
-  text-transform: uppercase;
-  background: linear-gradient(to right top, #000, #3ab0ff);
-  font-size: 15px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-}
-
-.boton1 {
-  height: 40px;
-  border-radius: 2px;
-  border: none;
-  color: black;
-  text-transform: uppercase;
-  font-size: 15px;
-  padding: 5px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-  cursor: pointer;
-  transform: translateY(-3px);
-  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-  transform: translateY(3px);
-}
-
-.boton:hover {
-  cursor: pointer;
-  transform: translateY(-3px);
-  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
-}
-
-.boton:active {
-  transform: translateY(3px);
-}
-.formu {
-  border-radius: 4px;
-  border: 1px solid #1f53c5;
-}
-
-@keyframes logofooter {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 100%;
-  }
-}
-.logofooter {
-  animation-name: logofooter;
-  animation-duration: 5s;
-  animation-iteration-count: infinite;
-}
+  align-content: center; }

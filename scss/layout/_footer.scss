@@ -1,0 +1,43 @@
+footer {
+  display: flexbox;
+  flex-direction: row;
+  background-color: $color-footer;
+  padding: 10px;
+  border-radius: 5px 3px 20px 10px;
+  -webkit-border-radius: 5px 3px 20px 10px;
+  -moz-border-radius: 5px 3px 20px 10px;
+  -ms-border-radius: 5px 3px 20px 10px;
+  -o-border-radius: 5px 3px 20px 10px;
+  border: 2px solid;
+  border-color: $color-bordes;
+  h3 {
+    font-size: large;
+    font-weight: bold;
+  }
+
+  .logofooter {
+    display: flex;
+    max-width: 4rem;
+    max-width: 4rem;
+  }
+
+  .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    margin-right: 10px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    &:hover {
+      color: #ffffff;
+      border-color: #ffffff;
+    }
+  }
+}
