@@ -28,52 +28,6 @@ header {
         -o-transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 1s;
         font-weight: bold; }
 
-footer {
-  display: flexbox;
-  flex-direction: row;
-  background-color: #a5c9ca;
-  padding: 10px;
-  border-radius: 5px 3px 20px 10px;
-  -webkit-border-radius: 5px 3px 20px 10px;
-  -moz-border-radius: 5px 3px 20px 10px;
-  -ms-border-radius: 5px 3px 20px 10px;
-  -o-border-radius: 5px 3px 20px 10px;
-  border: 2px solid;
-  border-color: #30475e; }
-  footer h3 {
-    font-size: large;
-    font-weight: bold; }
-  footer .logofooter {
-    display: flex;
-    max-width: 4rem;
-    max-width: 4rem; }
-  footer .social-links {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: 1px solid grey;
-    margin-right: 10px;
-    transition: 0.3s;
-    -webkit-transition: 0.3s;
-    -moz-transition: 0.3s;
-    -ms-transition: 0.3s;
-    -o-transition: 0.3s; }
-    footer .social-links:hover {
-      color: #ffffff;
-      border-color: #ffffff; }
-
-* {
-  margin: 0;
-  padding: 0; }
-  * html {
-    font-size: 95%;
-    font-family: helvetica; }
-  * body {
-    background-color: #f6f5f5; }
-
 /* css Index */
 .angulo {
   padding: 1rem; }
@@ -166,3 +120,176 @@ img {
   display: flex;
   margin: 1rem;
   align-content: center; }
+
+@media (min-device-width: 300px) and (max-device-width: 480px) {
+  html {
+    font-size: 75.5%; }
+  .imgindex1, .imgindex2, .tarjetero, .celular, .imgBusca,
+  .imgindex2 {
+    padding: 0.5rem;
+    object-fit: scale-down; }
+  .mision {
+    padding: 0.5rem;
+    margin: 1em; }
+  .social {
+    object-fit: scale-down;
+    margin: auto;
+    margin-left: 3rem; }
+  /* arreglos banca digital */
+  /* ccs Banca */
+  .redondelBa,
+  .redondelBa2 {
+    padding: 1rem; }
+  .tarjetero,
+  .celular,
+  .imgBusca {
+    padding: 0.5rem;
+    object-fit: scale-down; }
+  /* arreglos busca tu banco */
+  .card {
+    width: 20rem;
+    margin-left: 6rem; }
+  .formimagen {
+    display: none; }
+  .formularioTitulo {
+    align-items: center;
+    justify-content: center; }
+  .formulario {
+    margin-left: 3rem;
+    margin-right: 10rem;
+    justify-content: center; } }
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 900px) {
+  html {
+    font-size: 80%; }
+  .imgindex1, .imgindex2, .tarjetero, .celular, .imgBusca,
+  .imgindex2 {
+    padding: 1rem;
+    object-fit: scale-down; }
+  .mision {
+    padding: 1rem;
+    margin: 1em; }
+  .social {
+    object-fit: scale-down;
+    margin-left: 3rem; }
+  /* arreglos banca digital */
+  /* ccs Banca */
+  .redondelBa,
+  .redondelBa2 {
+    padding: 1rem; }
+  .tarjetero,
+  .celular,
+  .imgBusca {
+    padding: 1rem;
+    object-fit: scale-down; }
+  /* * formulario */
+  .formimagen {
+    display: none; }
+  .formularioTitulo {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .formulario {
+    display: flex;
+    margin-left: 10rem;
+    margin-right: 15rem; } }
+
+footer {
+  display: flexbox;
+  flex-direction: row;
+  background-color: #a5c9ca;
+  padding: 10px;
+  border-radius: 5px 3px 20px 10px;
+  -webkit-border-radius: 5px 3px 20px 10px;
+  -moz-border-radius: 5px 3px 20px 10px;
+  -ms-border-radius: 5px 3px 20px 10px;
+  -o-border-radius: 5px 3px 20px 10px;
+  border: 2px solid;
+  border-color: #30475e; }
+  footer h3 {
+    font-size: large;
+    font-weight: bold; }
+  footer .logofooter {
+    display: flex;
+    max-width: 4rem;
+    max-width: 4rem; }
+  footer .social-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    margin-right: 10px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s; }
+    footer .social-links:hover {
+      color: #ffffff;
+      border-color: #ffffff; }
+
+/* Animaciones */
+.boton {
+  height: 40px;
+  border-radius: 2px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  background: linear-gradient(to right top, #000, #3ab0ff);
+  font-size: 15px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px; }
+
+.boton1 {
+  height: 40px;
+  border-radius: 2px;
+  border: none;
+  color: black;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 5px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  cursor: pointer;
+  transform: translateY(-3px);
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  transform: translateY(3px); }
+
+.boton:hover {
+  cursor: pointer;
+  transform: translateY(-3px);
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s; }
+
+.boton:active {
+  transform: translateY(3px); }
+
+.formu {
+  border-radius: 4px;
+  border: 1px solid #1f53c5; }
+
+@keyframes logofooter {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 100%; } }
+
+.logofooter {
+  animation-name: logofooter;
+  animation-duration: 5s;
+  animation-iteration-count: infinite; }
+
+* {
+  margin: 0;
+  padding: 0; }
+  * html {
+    font-size: 95%;
+    font-family: helvetica; }
+  * body {
+    background-color: #f6f5f5; }
