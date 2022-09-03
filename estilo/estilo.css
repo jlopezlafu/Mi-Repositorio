@@ -71,6 +71,10 @@ img {
   border: 2px #30475e solid;
   margin: 2em;
   grid-area: mision; }
+  .mision h4 {
+    display: flex;
+    flex-direction: column;
+    text-align: left; }
 
 /* ccs Banca */
 .redondelBa {
