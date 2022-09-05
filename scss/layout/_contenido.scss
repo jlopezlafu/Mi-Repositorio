@@ -1,28 +1,29 @@
 /* css Index */
 .angulo {
-  padding: 1rem;
+  padding: 0.5rem;
+  color: $color-titulos;
+  font-size: 3.5rem;
+  font-weight: bold;
 }
 .redondel {
-  display: inline-block;
-  padding: 4rem;
-  flex-direction: column;
+  @include parrafos;
+  a {
+    text-decoration: none;
+  }
+  h2 {
+    color: $color-titulos;
+    font-weight: bold;
+  }
 }
 
 .redondel2 {
-  margin: auto;
-  display: flex;
-  padding: 4rem;
-  flex-direction: column;
+  @include parrafos;
 }
 
-.imgindex1 {
-  margin: auto;
+.imagen {
   padding: 1rem;
-  display: flex;
-  text-align: center;
-  flex-direction: row;
-  align-items: center;
   max-width: 40rem;
+  @extend %centralizador1;
 }
 
 img {
@@ -31,61 +32,55 @@ img {
   object-fit: contain;
 }
 
-.imgindex2 {
-  @extend .imgindex1;
-}
-
 .mision {
   background-color: $color-secciones;
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   border-radius: 4px 4px 4px 4px;
   -webkit-border-radius: 4px 4px 4px 4px;
   -moz-border-radius: 4px 4px 4px 4px;
   -ms-border-radius: 4px 4px 4px 4px;
   -o-border-radius: 4px 4px 4px 4px;
-  border: 2px #30475e solid;
+  border: 2px $color-bordes solid;
   margin: 2em;
-  grid-area: mision;
-
+  h3 {
+    @extend %centralizador1;
+    @include titulos(30px, center, none);
+    font-weight: bold;
+    text-decoration: underline;
+  }
   h4 {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
+    @extend %centralizador2;
+    @include titulos(25px, left, 1rem);
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  p {
+    @include mision;
   }
 }
 
 /* ccs Banca */
 
-.redondelBa {
-  display: inline-block;
-  padding: 4rem;
-  flex-direction: column;
-}
-
+.redondelBa,
 .redondelBa2 {
-  margin: auto;
-  display: flex;
-  padding: 4rem;
-  flex-direction: column;
+  @include parrafos;
+  h3 {
+    color: $color-titulos;
+    font-weight: bolder;
+  }
+  a {
+    text-decoration: none;
+  }
 }
 
-.tarjetero {
-  @extend .imgindex1;
-  max-width: 30rem;
-}
-.celular {
-  @extend .imgindex1;
-  max-width: 30rem;
-}
-.imgBusca {
-  @extend .imgindex1;
-}
 /* CSS solo para academy */
 
 .tituloAcademy {
+  @include titulos(40px, center, none);
+  color: $color-titulos;
+  font-weight: bold;
   display: fex;
   margin: 50px 20px;
 }
@@ -111,6 +106,7 @@ img {
 }
 
 .formularioTitulo {
+  color: $color-titulos;
   margin-top: 10px;
   margin-left: 10px;
 }
@@ -126,8 +122,7 @@ img {
     font-size: 75.5%;
   }
 
-  .imgindex1,
-  .imgindex2 {
+  .imagen {
     padding: 0.5rem;
     object-fit: scale-down;
   }
@@ -148,14 +143,7 @@ img {
 
   .redondelBa,
   .redondelBa2 {
-    padding: 1rem;
-  }
-
-  .tarjetero,
-  .celular,
-  .imgBusca {
     padding: 0.5rem;
-    object-fit: scale-down;
   }
 
   /* arreglos busca tu banco */
@@ -186,8 +174,7 @@ img {
     font-size: 80%;
   }
 
-  .imgindex1,
-  .imgindex2 {
+  .imagen {
     padding: 1rem;
     object-fit: scale-down;
   }
@@ -208,13 +195,6 @@ img {
   .redondelBa,
   .redondelBa2 {
     padding: 1rem;
-  }
-
-  .tarjetero,
-  .celular,
-  .imgBusca {
-    padding: 1rem;
-    object-fit: scale-down;
   }
 
   /* * formulario */

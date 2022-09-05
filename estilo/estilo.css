@@ -1,3 +1,19 @@
+.imagen, .mision h3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  margin: auto; }
+
+.mision h4 {
+  display: flex;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: left;
+  text-align: left; }
+
 header {
   background-color: #a5c9ca;
   font-size: large;
@@ -30,26 +46,32 @@ header {
 
 /* css Index */
 .angulo {
-  padding: 1rem; }
+  padding: 0.5rem;
+  color: #6c63ff;
+  font-size: 3.5rem;
+  font-weight: bold; }
 
 .redondel {
-  display: inline-block;
+  margin: auto;
+  display: flex;
   padding: 4rem;
-  flex-direction: column; }
+  flex-direction: column;
+  text-align: left; }
+  .redondel a {
+    text-decoration: none; }
+  .redondel h2 {
+    color: #6c63ff;
+    font-weight: bold; }
 
 .redondel2 {
   margin: auto;
   display: flex;
   padding: 4rem;
-  flex-direction: column; }
+  flex-direction: column;
+  text-align: left; }
 
-.imgindex1, .imgindex2, .tarjetero, .celular, .imgBusca {
-  margin: auto;
+.imagen {
   padding: 1rem;
-  display: flex;
-  text-align: center;
-  flex-direction: row;
-  align-items: center;
   max-width: 40rem; }
 
 img {
@@ -62,40 +84,56 @@ img {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   border-radius: 4px 4px 4px 4px;
   -webkit-border-radius: 4px 4px 4px 4px;
   -moz-border-radius: 4px 4px 4px 4px;
   -ms-border-radius: 4px 4px 4px 4px;
   -o-border-radius: 4px 4px 4px 4px;
   border: 2px #30475e solid;
-  margin: 2em;
-  grid-area: mision; }
+  margin: 2em; }
+  .mision h3 {
+    font-size: 30px;
+    text-align: center;
+    padding-left: none;
+    font-weight: bold;
+    text-decoration: underline; }
   .mision h4 {
+    font-size: 25px;
+    text-align: left;
+    padding-left: 1rem;
+    text-decoration: underline;
+    font-weight: bold; }
+  .mision p {
+    margin: auto;
     display: flex;
     flex-direction: column;
-    text-align: left; }
+    text-align: left;
+    padding: 1rem;
+    font-size: 15px; }
 
 /* ccs Banca */
-.redondelBa {
-  display: inline-block;
-  padding: 4rem;
-  flex-direction: column; }
-
+.redondelBa,
 .redondelBa2 {
   margin: auto;
   display: flex;
   padding: 4rem;
-  flex-direction: column; }
-
-.tarjetero {
-  max-width: 30rem; }
-
-.celular {
-  max-width: 30rem; }
+  flex-direction: column;
+  text-align: left; }
+  .redondelBa h3,
+  .redondelBa2 h3 {
+    color: #6c63ff;
+    font-weight: bolder; }
+  .redondelBa a,
+  .redondelBa2 a {
+    text-decoration: none; }
 
 /* CSS solo para academy */
 .tituloAcademy {
+  font-size: 40px;
+  text-align: center;
+  padding-left: none;
+  color: #6c63ff;
+  font-weight: bold;
   display: fex;
   margin: 50px 20px; }
 
@@ -117,6 +155,7 @@ img {
   max-width: 25rem; }
 
 .formularioTitulo {
+  color: #6c63ff;
   margin-top: 10px;
   margin-left: 10px; }
 
@@ -128,8 +167,7 @@ img {
 @media (min-device-width: 300px) and (max-device-width: 480px) {
   html {
     font-size: 75.5%; }
-  .imgindex1, .imgindex2, .tarjetero, .celular, .imgBusca,
-  .imgindex2 {
+  .imagen {
     padding: 0.5rem;
     object-fit: scale-down; }
   .mision {
@@ -143,12 +181,7 @@ img {
   /* ccs Banca */
   .redondelBa,
   .redondelBa2 {
-    padding: 1rem; }
-  .tarjetero,
-  .celular,
-  .imgBusca {
-    padding: 0.5rem;
-    object-fit: scale-down; }
+    padding: 0.5rem; }
   /* arreglos busca tu banco */
   .card {
     width: 20rem;
@@ -166,8 +199,7 @@ img {
 @media only screen and (min-device-width: 481px) and (max-device-width: 900px) {
   html {
     font-size: 80%; }
-  .imgindex1, .imgindex2, .tarjetero, .celular, .imgBusca,
-  .imgindex2 {
+  .imagen {
     padding: 1rem;
     object-fit: scale-down; }
   .mision {
@@ -181,11 +213,6 @@ img {
   .redondelBa,
   .redondelBa2 {
     padding: 1rem; }
-  .tarjetero,
-  .celular,
-  .imgBusca {
-    padding: 1rem;
-    object-fit: scale-down; }
   /* * formulario */
   .formimagen {
     display: none; }

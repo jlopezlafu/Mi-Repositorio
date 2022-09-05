@@ -1,0 +1,21 @@
+@mixin parrafos {
+  margin: auto;
+  display: flex;
+  padding: 4rem;
+  flex-direction: column;
+  text-align: left;
+}
+@mixin mision {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 1rem;
+  font-size: 15px;
+}
+
+@mixin titulos($size, $alineacion, $padding) {
+  font-size: $size;
+  text-align: $alineacion;
+  padding-left: $padding;
+}
