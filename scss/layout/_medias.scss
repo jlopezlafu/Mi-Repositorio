@@ -1,0 +1,98 @@
+@media (min-device-width: 300px) and (max-device-width: 480px) {
+  html {
+    font-size: 75.5%;
+  }
+
+  .imagen {
+    padding: 0.5rem;
+    object-fit: scale-down;
+  }
+
+  .mision {
+    padding: 0.5rem;
+    margin: 1em;
+  }
+
+  .social {
+    object-fit: scale-down;
+    margin: auto;
+    margin-left: 1.5rem;
+  }
+
+  /* arreglos banca digital */
+  /* ccs Banca */
+
+  .redondelBa,
+  .redondelBa2 {
+    padding: 0.5rem;
+  }
+
+  /* arreglos busca tu banco */
+
+  .card {
+    width: 20rem;
+    margin-left: 6rem;
+  }
+
+  .formimagen {
+    display: none;
+  }
+
+  .formularioTitulo {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .formulario {
+    margin-left: 3rem;
+    margin-right: 10rem;
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 900px) {
+  html {
+    font-size: 80%;
+  }
+
+  .imagen {
+    padding: 1rem;
+    object-fit: scale-down;
+  }
+
+  .mision {
+    padding: 1rem;
+    margin: 1em;
+  }
+
+  .social {
+    object-fit: scale-down;
+    margin-left: 3rem;
+  }
+
+  /* arreglos banca digital */
+  /* ccs Banca */
+
+  .redondelBa,
+  .redondelBa2 {
+    padding: 1rem;
+  }
+
+  /* * formulario */
+
+  .formimagen {
+    display: none;
+  }
+
+  .formularioTitulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .formulario {
+    display: flex;
+    margin-left: 10rem;
+    margin-right: 15rem;
+  }
+}
