@@ -86,10 +86,9 @@ img {
 }
 
 .card {
-  display: flexbox;
+  display: flex;
   width: map-get($estilo, tamimg);
   margin-left: map-get($estilo, margin);
-  margin-right: map-get($estilo, margin);
   margin-bottom: map-get($estilo, marginbottom);
 }
 /* formulario */
