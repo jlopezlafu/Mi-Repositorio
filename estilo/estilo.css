@@ -128,20 +128,37 @@ img {
     text-decoration: none; }
 
 /* CSS solo para academy */
-.tituloAcademy {
+.acade .tituloAcademy {
   font-size: 40px;
   text-align: center;
   padding-left: none;
   color: #6c63ff;
   font-weight: bold;
   display: fex;
-  margin: 50px 20px; }
+  margin: 1rem; }
+
+.acade p {
+  padding: 1rem;
+  font-size: 1rem; }
 
 .card {
   display: flex;
   width: 20rem;
   margin-left: 3rem;
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+  box-shadow: 5px 3px 3px #8d8daa; }
+  .card h5 {
+    margin: 1px;
+    padding: 1px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #343a40; }
+  .card p {
+    padding: 1px;
+    justify-content: center; }
+  .card a {
+    text-decoration: none;
+    color: #125d98; }
 
 /* formulario */
 .formimagen {
@@ -189,7 +206,7 @@ footer {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: 1px solid grey;
+    border: 1px solid #8d8daa;
     margin-right: 10px;
     transition: 0.3s;
     -webkit-transition: 0.3s;
@@ -238,6 +255,20 @@ footer {
 
 .boton:active {
   transform: translateY(3px); }
+
+.card:hover {
+  box-shadow: 10px 10px 10px #8d8daa;
+  transform: translateY(-1px);
+  transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+  -webkit-transform: translateY(-1px);
+  -moz-transform: translateY(-1px);
+  -ms-transform: translateY(-1px);
+  -o-transform: translateY(-1px); }
+
+.card a:hover {
+  cursor: pointer;
+  color: #23374d;
+  font-weight: bold; }
 
 .formu {
   border-radius: 4px;

@@ -76,20 +76,40 @@ img {
 }
 
 /* CSS solo para academy */
-
-.tituloAcademy {
-  @include titulos(40px, center, none);
-  color: $color-titulos;
-  font-weight: bold;
-  display: fex;
-  margin: 50px 20px;
+.acade {
+  .tituloAcademy {
+    @include titulos(40px, center, none);
+    color: $color-titulos;
+    font-weight: bold;
+    display: fex;
+    margin: 1rem;
+  }
+  p {
+    padding: 1rem;
+    font-size: 1rem;
+  }
 }
-
 .card {
   display: flex;
   width: map-get($estilo, tamimg);
   margin-left: map-get($estilo, margin);
   margin-bottom: map-get($estilo, marginbottom);
+  box-shadow: 5px 3px 3px #8d8daa;
+  h5 {
+    margin: 1px;
+    padding: 1px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $color-titcard;
+  }
+  p {
+    padding: 1px;
+    justify-content: center;
+  }
+  a {
+    text-decoration: none;
+    color: #125d98;
+  }
 }
 /* formulario */
 
