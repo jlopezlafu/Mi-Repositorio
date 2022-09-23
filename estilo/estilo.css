@@ -125,7 +125,8 @@ img {
     font-weight: bolder; }
   .redondelBa a,
   .redondelBa2 a {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #125d98; }
 
 /* CSS solo para academy */
 .acade .tituloAcademy {
@@ -160,7 +161,44 @@ img {
     text-decoration: none;
     color: #125d98; }
 
-/* formulario */
+/* cards busca tu banco*/
+.cele .titulobusca {
+  font-size: 45px;
+  text-align: center;
+  padding-left: none;
+  color: #6c63ff;
+  font-weight: bold;
+  display: fex;
+  margin: 1rem; }
+
+.cele p {
+  font-size: 1rem;
+  padding: 1rem; }
+
+.banco {
+  display: flex;
+  width: 20rem;
+  box-shadow: 5px 3px 3px #8d8daa; }
+  .banco ul {
+    margin: 1px;
+    padding: 1px; }
+  .banco li {
+    margin: 1px;
+    padding: 1px; }
+  .banco summary {
+    margin: 1px;
+    padding: 1px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #343a40; }
+  .banco p {
+    padding: 1px;
+    justify-content: center; }
+  .banco a {
+    text-decoration: none;
+    color: #125d98; }
+
+/* formulario*/
 .formimagen {
   justify-content: right;
   margin: 1rem;

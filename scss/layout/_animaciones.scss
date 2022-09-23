@@ -46,7 +46,7 @@
 
 .card {
   &:hover {
-    box-shadow: 10px 10px 10px #8d8daa;
+    box-shadow: 10px 10px 10px $color-shadow;
     transform: translateY(-1px);
     transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
     -webkit-transform: translateY(-1px);
@@ -57,14 +57,14 @@
   a {
     &:hover {
       cursor: pointer;
-      color: #23374d;
+      color: $color-linksclick;
       font-weight: bold;
     }
   }
 }
 .formu {
   border-radius: 4px;
-  border: 1px solid #1f53c5;
+  border: 1px solid $color-formu;
 }
 
 @keyframes logofooter {
