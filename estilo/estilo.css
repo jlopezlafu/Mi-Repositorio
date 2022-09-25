@@ -14,8 +14,26 @@
   justify-content: left;
   text-align: left; }
 
+.cele p {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: auto; }
+
+.contbanco {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1rem; }
+
+.contbanco .banco {
+  display: inline-flex;
+  justify-items: center; }
+
 header {
-  background-color: #a5c9ca;
+  background-color: #3f72af;
   font-size: large;
   padding: 10px;
   border-radius: 5px 3px 20px 10px;
@@ -47,7 +65,7 @@ header {
 /* css Index */
 .angulo {
   padding: 0.5rem;
-  color: #6c63ff;
+  color: #112d4e;
   font-size: 3.5rem;
   font-weight: bold; }
 
@@ -58,9 +76,10 @@ header {
   flex-direction: column;
   text-align: left; }
   .redondel a {
+    color: #125d98;
     text-decoration: none; }
   .redondel h2 {
-    color: #6c63ff;
+    color: #112d4e;
     font-weight: bold; }
 
 .redondel2 {
@@ -69,6 +88,9 @@ header {
   padding: 4rem;
   flex-direction: column;
   text-align: left; }
+  .redondel2 a {
+    color: #125d98;
+    text-decoration: none; }
 
 .imagen {
   padding: 1rem;
@@ -80,7 +102,7 @@ img {
   object-fit: contain; }
 
 .mision {
-  background-color: #a2b5bb;
+  background-color: #71c9ce;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -121,7 +143,7 @@ img {
   text-align: left; }
   .redondelBa h3,
   .redondelBa2 h3 {
-    color: #6c63ff;
+    color: #112d4e;
     font-weight: bolder; }
   .redondelBa a,
   .redondelBa2 a {
@@ -133,7 +155,7 @@ img {
   font-size: 40px;
   text-align: center;
   padding-left: none;
-  color: #6c63ff;
+  color: #112d4e;
   font-weight: bold;
   display: fex;
   margin: 1rem; }
@@ -142,18 +164,19 @@ img {
   padding: 1rem;
   font-size: 1rem; }
 
+/* cards academy*/
 .card {
   display: flex;
   width: 20rem;
   margin-left: 3rem;
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
   box-shadow: 5px 3px 3px #8d8daa; }
   .card h5 {
     margin: 1px;
     padding: 1px;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #343a40; }
+    color: #112d4e; }
   .card p {
     padding: 1px;
     justify-content: center; }
@@ -166,39 +189,59 @@ img {
   font-size: 45px;
   text-align: center;
   padding-left: none;
-  color: #6c63ff;
+  color: #112d4e;
   font-weight: bold;
   display: fex;
   margin: 1rem; }
 
 .cele p {
-  font-size: 1rem;
-  padding: 1rem; }
-
-.banco {
+  margin: auto;
   display: flex;
-  width: 20rem;
-  box-shadow: 5px 3px 3px #8d8daa; }
-  .banco ul {
-    margin: 1px;
-    padding: 1px; }
-  .banco li {
-    margin: 1px;
-    padding: 1px; }
-  .banco summary {
-    margin: 1px;
-    padding: 1px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #343a40; }
-  .banco p {
-    padding: 1px;
-    justify-content: center; }
-  .banco a {
-    text-decoration: none;
-    color: #125d98; }
+  text-align: left;
+  padding-top: 1rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-bottom: 1rem;
+  font-size: 1rem; }
 
-/* formulario*/
+.contbanco .banco {
+  background: #dbe2ef;
+  background: linear-gradient(45deg, #dbe2ef 25%, #f9f7f7 59%);
+  max-width: 20rem;
+  max-height: 70rem;
+  object-fit: contain;
+  box-shadow: 5px 3px 3px #8d8daa; }
+
+.contbanco img {
+  width: 100%;
+  height: 20rem;
+  object-fit: contain; }
+
+.contbanco ul {
+  margin: 1px;
+  padding: 1px;
+  list-style: none; }
+
+.contbanco li {
+  margin: 1px;
+  padding: 1px;
+  list-style: none; }
+
+.contbanco summary {
+  margin: 1px;
+  padding: 1px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #112d4e; }
+
+.contbanco p {
+  padding: 1px; }
+
+.contbanco a {
+  text-decoration: none;
+  color: #125d98; }
+
+/* Contacto*/
 .formimagen {
   justify-content: right;
   margin: 1rem;
@@ -209,7 +252,7 @@ img {
   max-width: 25rem; }
 
 .formularioTitulo {
-  color: #6c63ff;
+  color: #112d4e;
   margin-top: 10px;
   margin-left: 10px; }
 
@@ -221,7 +264,7 @@ img {
 footer {
   display: flexbox;
   flex-direction: row;
-  background-color: #a5c9ca;
+  background-color: #3f72af;
   padding: 10px;
   border-radius: 5px 3px 20px 10px;
   -webkit-border-radius: 5px 3px 20px 10px;

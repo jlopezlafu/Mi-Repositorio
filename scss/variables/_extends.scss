@@ -14,3 +14,22 @@
   justify-content: left;
   text-align: left;
 }
+%centralizador3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: auto;
+}
+%centralizador4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 1rem;
+}
+
+%centralizador5 {
+  display: inline-flex;
+  justify-items: center;
+}

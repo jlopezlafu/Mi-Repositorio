@@ -8,6 +8,7 @@
 .redondel {
   @include parrafos;
   a {
+    color: $color-links;
     text-decoration: none;
   }
   h2 {
@@ -18,6 +19,10 @@
 
 .redondel2 {
   @include parrafos;
+  a {
+    color: $color-links;
+    text-decoration: none;
+  }
 }
 
 .imagen {
@@ -90,6 +95,7 @@ img {
     font-size: 1rem;
   }
 }
+/* cards academy*/
 .card {
   display: flex;
   width: map-get($estilo, tamimg);
@@ -123,22 +129,40 @@ img {
     margin: 1rem;
   }
   p {
+    @extend %centralizador3;
+    @include parrafo2;
     font-size: 1rem;
-    padding: 1rem;
   }
 }
-
-.banco {
-  display: flex;
-  width: map-get($estilo, tamimg);
-  box-shadow: 5px 3px 3px $color-shadow;
+.contbanco {
+  @extend %centralizador4;
+  .banco {
+    background: rgb(219, 226, 239);
+    background: linear-gradient(
+      45deg,
+      rgba(219, 226, 239, 1) 25%,
+      rgba(249, 247, 247, 1) 59%
+    );
+    @extend %centralizador5;
+    max-width: map-get($estilo, tamimg);
+    max-height: 70rem;
+    object-fit: contain;
+    box-shadow: 5px 3px 3px $color-shadow;
+  }
+  img {
+    width: 100%;
+    height: map-get($estilo, tamimg);
+    object-fit: contain;
+  }
   ul {
     margin: 1px;
     padding: 1px;
+    list-style: none;
   }
   li {
     margin: 1px;
     padding: 1px;
+    list-style: none;
   }
   summary {
     margin: 1px;
@@ -149,14 +173,13 @@ img {
   }
   p {
     padding: 1px;
-    justify-content: center;
   }
   a {
     text-decoration: none;
     color: $color-links;
   }
 }
-/* formulario*/
+/* Contacto*/
 
 .formimagen {
   justify-content: right;
