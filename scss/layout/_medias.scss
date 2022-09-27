@@ -1,10 +1,11 @@
 @media (min-device-width: 300px) and (max-device-width: 480px) {
   html {
-    font-size: 80%;
+    font-size: 77%;
   }
 
   .imagen {
     padding: 0.5rem;
+    max-width: 30rem;
     object-fit: scale-down;
   }
 
@@ -16,7 +17,11 @@
   .social {
     object-fit: scale-down;
     margin: auto;
-    margin-left: 1.5rem;
+    margin-left: 1rem;
+    .social-links {
+      width: 50px;
+      height: 50px;
+    }
   }
 
   /* arreglos banca digital */
@@ -30,7 +35,14 @@
   /* arreglos busca tu banco */
 
   .card {
-    width: 20rem;
+    width: 25rem;
+    margin: auto;
+  }
+
+  .contbanco {
+    .banco {
+      margin: auto;
+    }
   }
 
   .formimagen {
@@ -38,14 +50,23 @@
   }
 
   .formularioTitulo {
-    align-items: center;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
     justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
   }
 
   .formulario {
-    margin-left: 3rem;
-    margin-right: 10rem;
     justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    .apellido {
+      display: none;
+    }
   }
 }
 
@@ -66,26 +87,51 @@
 
   .social {
     object-fit: scale-down;
-    margin-left: 3rem;
+    margin: auto;
+    margin-left: 1rem;
+    .social-links {
+      width: 55px;
+      height: 55px;
+    }
   }
 
   /* arreglos banca digital */
   /* ccs Banca */
 
-  .redondelBa,
-  .redondelBa2 {
-    padding: 1rem;
+  /* arreglos busca tu banco */
+
+  .card {
+    width: 25rem;
+    margin: auto;
   }
 
-  /* * formulario */
+  .contbanco {
+    .banco {
+      margin: auto;
+    }
+  }
 
   .formimagen {
     display: none;
   }
 
   .formularioTitulo {
-    display: flex;
-    align-items: center;
+    margin: 0.5rem;
+    margin: 0.5rem;
+    text-align: center;
     justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+  }
+
+  .formulario {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    .apellido {
+      display: none;
+    }
   }
 }

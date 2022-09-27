@@ -194,10 +194,7 @@ img {
 /* Contacto*/
 
 .formimagen {
-  justify-content: right;
-  display: flex;
-  text-align: right;
-  flex-direction: column;
+  @extend %centralizador2;
   max-width: 30rem;
 }
 
@@ -218,6 +215,10 @@ img {
     padding: 1px;
     border: 1px solid $color-formu;
   }
+  .desplegable {
+    width: 70%;
+  }
+
   .boton {
     height: 50px;
     border-radius: 2px;
