@@ -1,31 +1,6 @@
 /* Animaciones */
 
-.boton {
-  height: 40px;
-  border-radius: 2px;
-  border: none;
-  color: white;
-  text-transform: uppercase;
-  background: linear-gradient(to right top, #000, #3ab0ff);
-  font-size: 15px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
-}
-
 .boton1 {
-  height: 40px;
-  border-radius: 2px;
-  border: none;
-  color: black;
-  text-transform: uppercase;
-  font-size: 15px;
-  padding: 5px;
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  -ms-border-radius: 2px;
-  -o-border-radius: 2px;
   cursor: pointer;
   transform: translateY(-3px);
   transition: all cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
@@ -61,10 +36,6 @@
       font-weight: bold;
     }
   }
-}
-.formu {
-  border-radius: 4px;
-  border: 1px solid $color-formu;
 }
 
 @keyframes logofooter {
