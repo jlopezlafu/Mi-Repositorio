@@ -33,105 +33,117 @@
   }
 
   /* arreglos busca tu banco */
-
+  .cele {
+    margin: 0.25rem;
+  }
   .card {
     width: 25rem;
-    margin: 1rem;
+    margin: 0.5rem;
   }
 
   .contbanco {
     .banco {
-      margin: 1rem;
+      margin: 0.5rem;
     }
   }
+  /* Contacto*/
 
   .formimagen {
-    display: none;
+    max-width: 30rem;
   }
+  .formucont {
+    width: 100%;
+    .formulario {
+      .formularioTitulo {
+        font-size: 30px;
+        margin: auto;
+      }
+      .formu {
+        width: 90%;
+      }
+      .desplegable {
+        width: 90%;
+      }
+      .check {
+        font-size: 15px;
+        width: 90%;
+      }
 
-  .formularioTitulo {
-    margin: 0.5rem;
-    padding: 0.5rem;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    justify-items: center;
-  }
-
-  .formulario {
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    justify-items: center;
-    .apellido {
-      display: none;
+      .boton {
+        width: 60%;
+        font-size: 15px;
+      }
     }
   }
-}
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 900px) {
-  html {
-    font-size: 80%;
+  @media only screen and (min-device-width: 481px) and (max-device-width: 900px) {
+    html {
+      font-size: 80%;
+    }
+
+    .imagen {
+      padding: 1rem;
+      object-fit: scale-down;
+    }
+
+    .mision {
+      padding: 1rem;
+      margin: 1em;
+    }
+
+    .social {
+      object-fit: scale-down;
+      margin: auto;
+      margin-left: 1rem;
+      .social-links {
+        width: 55px;
+        height: 55px;
+      }
+    }
+
+    /* arreglos banca digital */
+    /* ccs Banca */
+
+    /* arreglos busca tu banco */
+
+    .card {
+      width: 25rem;
+      margin: 1rem;
+    }
+
+    .contbanco {
+      .banco {
+        margin: 1rem;
+      }
+    }
   }
-
-  .imagen {
-    padding: 1rem;
-    object-fit: scale-down;
-  }
-
-  .mision {
-    padding: 1rem;
-    margin: 1em;
-  }
-
-  .social {
-    object-fit: scale-down;
+  .formimagen {
+    max-width: 30rem;
     margin: auto;
-    margin-left: 1rem;
-    .social-links {
-      width: 55px;
-      height: 55px;
-    }
-  }
-
-  /* arreglos banca digital */
-  /* ccs Banca */
-
-  /* arreglos busca tu banco */
-
-  .card {
-    width: 25rem;
-    margin: 1rem;
-  }
-
-  .contbanco {
-    .banco {
-      margin: 1rem;
-    }
-  }
-
-  .formimagen {
-    display: none;
-  }
-
-  .formularioTitulo {
-    margin: 0.5rem;
-    margin: 0.5rem;
-    text-align: center;
-    justify-content: center;
     align-items: center;
-    align-content: center;
-    justify-items: center;
   }
+  .formucont {
+    width: 100%;
+    .formulario {
+      .formularioTitulo {
+        font-size: 30px;
+        margin: auto;
+      }
+      .formu {
+        width: 90%;
+      }
+      .desplegable {
+        width: 90%;
+      }
+      .check {
+        font-size: 15px;
+        width: 90%;
+      }
 
-  .formulario {
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    justify-items: center;
-    .apellido {
-      display: none;
+      .boton {
+        width: 60%;
+        font-size: 15px;
+      }
     }
   }
 }
