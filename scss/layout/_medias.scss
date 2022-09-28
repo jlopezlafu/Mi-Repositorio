@@ -36,11 +36,12 @@
   .cele {
     margin: 0.25rem;
   }
-  .card {
-    width: 25rem;
-    margin: 0.5rem;
+  .cursos {
+    .card {
+      margin: auto;
+      margin-bottom: 0.5rem;
+    }
   }
-
   .contbanco {
     .banco {
       margin: 0.5rem;
@@ -68,53 +69,53 @@
         font-size: 15px;
         width: 90%;
       }
-
       .boton {
         width: 60%;
         font-size: 15px;
       }
     }
   }
+}
+@media only screen and (min-device-width: 481px) and (max-device-width: 900px) {
+  html {
+    font-size: 80%;
+  }
 
-  @media only screen and (min-device-width: 481px) and (max-device-width: 900px) {
-    html {
-      font-size: 80%;
+  .imagen {
+    padding: 1rem;
+    object-fit: scale-down;
+  }
+
+  .mision {
+    padding: 1rem;
+    margin: 1em;
+  }
+
+  .social {
+    object-fit: scale-down;
+    margin: auto;
+    margin-left: 1rem;
+    .social-links {
+      width: 55px;
+      height: 55px;
     }
+  }
 
-    .imagen {
-      padding: 1rem;
-      object-fit: scale-down;
-    }
+  /* arreglos banca digital */
+  /* ccs Banca */
 
-    .mision {
-      padding: 1rem;
-      margin: 1em;
-    }
+  /* arreglos busca tu banco */
 
-    .social {
-      object-fit: scale-down;
-      margin: auto;
-      margin-left: 1rem;
-      .social-links {
-        width: 55px;
-        height: 55px;
-      }
-    }
-
-    /* arreglos banca digital */
-    /* ccs Banca */
-
-    /* arreglos busca tu banco */
-
+  .cursos {
     .card {
-      width: 25rem;
-      margin: 1rem;
+      margin: auto;
+      margin-bottom: 0.5rem;
     }
+  }
 
-    .contbanco {
-      .banco {
-        margin: 1rem;
-      }
+  .contbanco {
+    .banco {
+      margin: 1rem;
     }
   }
   .formimagen {

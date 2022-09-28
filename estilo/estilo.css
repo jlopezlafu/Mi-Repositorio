@@ -412,9 +412,8 @@ footer {
   /* arreglos busca tu banco */
   .cele {
     margin: 0.25rem; }
-  .card {
-    width: 25rem;
-    margin: 0.5rem; }
+  .cursos .card {
+    margin: auto; }
   .contbanco .banco {
     margin: 0.5rem; }
   /* Contacto*/
@@ -455,9 +454,12 @@ footer {
   /* arreglos banca digital */
   /* ccs Banca */
   /* arreglos busca tu banco */
-  .card {
-    width: 25rem;
-    margin: 1rem; }
+  .cursos .card {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    align-items: center;
+    justify-items: center; }
   .contbanco .banco {
     margin: 1rem; } }
 
